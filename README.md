@@ -9,3 +9,4 @@ This is markdown. I am just writing text.
 *italics*
 **bold**
 
+![](american idiot chromagram.png)
