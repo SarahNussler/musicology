@@ -10,3 +10,4 @@ This is markdown. I am just writing text.
 **bold**
 
 ![](american idiot chromagram.png)
+![](tears_dry_chromagram.png)
