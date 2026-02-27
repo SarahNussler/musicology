@@ -1,11 +1,16 @@
 # Portfolio Sarah Nüssler
 
 ## Chromagrams
-![](american idiot chromagram.png)
+Amy Winehouse — Tears Dry On Their Own:
 ![](tears_dry_chromagram.png)
 
-### Cepstograms
+Greenday — American Idiot:
+![](american_idiot_chromagram.png)
 
-![]amy_timbre_chebyshev.png
-![]greenday_timbre_chebyshev.png
+### Cepstograms
+Amy Winehouse — Tears Dry On Their Own:
+![](amy_timbre_chebyshev.png)
+
+Greenday — American Idiot:
+![](greenday_timbre_chebyshev.png)
 
