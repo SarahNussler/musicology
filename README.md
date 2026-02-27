@@ -1,13 +1,11 @@
-# title
+# Portfolio Sarah Nüssler
 
-This is markdown. I am just writing text. 
-
-## This is a heading
-
-### Sub-heading
-
-*italics*
-**bold**
-
+## Chromagrams
 ![](american idiot chromagram.png)
 ![](tears_dry_chromagram.png)
+
+### Cepstograms
+
+![]amy_timbre_chebyshev.png
+![]greenday_timbre_chebyshev.png
+
