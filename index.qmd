@@ -1,0 +1,49 @@
+---
+title: "Computational Musicology 2026"
+author: "Sarah Nüssler"
+format:
+  dashboard:
+    orientation: columns
+editor: visual
+lang: en
+---
+
+## Row
+
+::: card
+### Corpus
+
+There are several ways economic prosperity is measured and predicted. From intuitive measures and mathematically complex models (unemployment, inflation, interest rates), to things like skirt length, lipstick sales and the "men's underwear index". I wanted to see if music could be a similar recession indicator. While you might think that people tend to listen to more melancholic and low-tempo music during economic turmoil, some quick research into "Recession pop" suggests the opposite. Smart (2025) describes it as "art which is thought to exalt in maximalism, high energy, and optimism as a way of escaping the difficulties that lie outside the walls of the nightclub". Hanson (2014) similarly links the rise of electronic dance music in 2009-2011 to the global economic crisis. The corpus of music I would like to use to further research this is the top songs from 2004-2007 versus the top songs from 2008-2011.
+
+Hanson, C. F. (2014). Pop Goes Utopia: An Examination of Utopianism in Recent Electronic Dance Pop. Utopian Studies, 25(2), 384–413.
+
+Smart, N. (2025). Bret/BRAT. Critical Quarterly
+:::
+
+## Row
+
+::: card
+### Amy Winehouse chromagram
+
+![](images/tears_dry_chromagram.png){width="100%"}
+:::
+
+::: card
+### Green Day chromagram
+
+![](images/american_idiot_chromagram.png){width="100%"}
+:::
+
+## Row
+
+::: card
+### Amy Winehouse cepstogram
+
+![](images/amy_timbre_chebyshev.png){width="100%"}
+:::
+
+::: card
+### Green Day cepstogram
+
+![](images/greenday_timbre_chebyshev.png){width="100%"}
+:::
