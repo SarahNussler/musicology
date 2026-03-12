@@ -6,9 +6,12 @@ format:
     orientation: columns
 editor: visual
 lang: en
+theme: journal
 ---
 
 ## Row
+
+# Corpus
 
 ::: card
 ### Corpus
@@ -22,28 +25,47 @@ Smart, N. (2025). Bret/BRAT. Critical Quarterly
 
 ## Row
 
+# Chromagrams
+
 ::: card
 ### Amy Winehouse chromagram
 
-![](images/tears_dry_chromagram.png){width="100%"}
+![](tears_dry_chromagram.png)
 :::
 
 ::: card
 ### Green Day chromagram
 
-![](images/american_idiot_chromagram.png){width="100%"}
+![](american_idiot_chromagram.png)
 :::
 
 ## Row
 
+# Cepstograms
+
 ::: card
 ### Amy Winehouse cepstogram
 
-![](images/amy_timbre_chebyshev.png){width="100%"}
+![](amy_timbre_chebyshev.png)
 :::
 
 ::: card
 ### Green Day cepstogram
 
-![](images/greenday_timbre_chebyshev.png){width="100%"}
+![](greenday_timbre_chebyshev.png)
+:::
+
+## Row
+# Tempograms
+
+::: card
+### Rhythm/tempo analysis 2004
+![](novelty_yeah_usher.png)
+![](tempogram_yeah_usher.png)
+:::
+
+::: card
+### Rhythm/tempo analysis 2008
+
+![](novelty_curve_low_florida.png) ![](tempogram_low_florida.png)
 :::
