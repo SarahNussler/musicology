@@ -56,16 +56,33 @@ Smart, N. (2025). Bret/BRAT. Critical Quarterly
 :::
 
 ## Row
+
 # Tempograms
 
 ::: card
-### Rhythm/tempo analysis 2004
-![](novelty_yeah_usher.png)
-![](tempogram_yeah_usher.png)
+### 2004
+
+![](novelty_yeah_usher.png) ![](tempogram_yeah_usher.png)
 :::
 
 ::: card
-### Rhythm/tempo analysis 2008
+### A comparison of tempograms before and during the economic crisis of 2008
+
+The novelty curves visualize how much the musical signal changes over time. In this case, only the first minute of the song is analyzed, so not too many details are lost but a significant portion of the song is still visualized. Peaks in the curve indicate moments where the audio features differ strongly from the preceding segment.
+
+In the novelty curve of *Yeah!* by Usher (2004), the peaks are relatively spread out across the song. This suggests that the track contains clearer structural transitions, such as changes between verse, chorus, and other sections. When listening to the song, this pattern can also be heard clearly. The track opens with a relatively sparse introduction built around a recognizable synthesizer motif and a steady beat. As the vocals enter, additional elements such as background sounds and rhythmic accents are introduced. These moments correspond to several of the larger peaks in the novelty curve. Between these moments, the beat remains very consistent, which is reflected in the lower novelty values between peaks.
+
+By contrast, the novelty curve of *Low* by Flo Rida (2008) shows many more peaks occurring close together. This indicates more frequent changes in the song. This pattern can also be heard in the music itself. The opening of *Low* quickly introduces a layered instrumental texture with multiple percussive elements, bass hits, and electronic sounds. Throughout the first minute, small rhythmic variations and additional production elements appear frequently, even when the overall groove remains the same. These frequent sonic changes are reflected in the many closely spaced peaks in the novelty curve.
+
+The tempograms provide additional insight into the rhythmic structure of the songs by visualizing the strength of periodicities at different tempo levels over time. In both tracks, a clear horizontal line can be observed, indicating a very stable underlying tempo throughout the song.
+
+In *Yeah!*, the most prominent tempo band appears around roughly 200 BPM. However, this value likely does not represent the perceptual tempo of the track. Instead, it is probably a double-time representation of the underlying beat. A second line is clearly visible around 400 BPM, probably a quatruple-time representation. A similar pattern can be observed in *Low*, where a strong horizontal band appears around approximately 250 BPM. However, the tempogram of *Low* also shows several additional horizontal bands that are spaced at regular intervals. These may reflect multiple rhythmic subdivisions in the percussion and electronic production layers, suggesting a slightly more complex beat than in *Yeah!*.
+
+These differences can also be heard when listening to the songs themselves. *Low* feels more upbeat and is clearly faster, which contributes to the "dance-ability" of the song.
+:::
+
+::: card
+### 2008
 
 ![](novelty_curve_low_florida.png) ![](tempogram_low_florida.png)
 :::
