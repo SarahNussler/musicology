@@ -86,3 +86,21 @@ These differences can also be heard when listening to the songs themselves. *Low
 
 ![](novelty_curve_low_florida.png) ![](tempogram_low_florida.png)
 :::
+
+## Row
+
+# Dendograms
+
+::: card
+![](pre-crisis dendogram.png)
+![](pre_crisis_heatmap.png)
+:::
+
+::: card
+### Analysis
+:::
+
+::: card
+![](crisis period dendogram.png)
+![](newheatmap_crisis.png)
+:::
