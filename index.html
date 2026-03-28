@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
         <div class="navbar-author">Sarah Nüssler</div>
       </div>
     </div>
-<div id="dashboard-collapse" class="navbar-collapse collapse"><ul class="navbar-nav navbar-nav-scroll me-auto" role="tablist"><li class="nav-item" role="presentation"><a id="tab-corpus" class="nav-link active" data-bs-toggle="tab" role="tab" data-bs-target="#corpus" data-scrolling="false" href="#corpus" aria-controls="corpus" aria-selected="true"><span class="nav-link-text">Corpus</span></a></li><li class="nav-item" role="presentation"><a id="tab-chromagrams" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#chromagrams" data-scrolling="false" href="#chromagrams" aria-controls="chromagrams" aria-selected="false"><span class="nav-link-text">Chromagrams</span></a></li><li class="nav-item" role="presentation"><a id="tab-cepstograms" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#cepstograms" data-scrolling="false" href="#cepstograms" aria-controls="cepstograms" aria-selected="false"><span class="nav-link-text">Cepstograms</span></a></li><li class="nav-item" role="presentation"><a id="tab-tempograms" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#tempograms" data-scrolling="false" href="#tempograms" aria-controls="tempograms" aria-selected="false"><span class="nav-link-text">Tempograms</span></a></li><li class="nav-item" role="presentation"><a id="tab-dendograms" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#dendograms" data-scrolling="false" href="#dendograms" aria-controls="dendograms" aria-selected="false"><span class="nav-link-text">Dendograms</span></a></li></ul></div></div>
+<div id="dashboard-collapse" class="navbar-collapse collapse"><ul class="navbar-nav navbar-nav-scroll me-auto" role="tablist"><li class="nav-item" role="presentation"><a id="tab-corpus" class="nav-link active" data-bs-toggle="tab" role="tab" data-bs-target="#corpus" data-scrolling="false" href="#corpus" aria-controls="corpus" aria-selected="true"><span class="nav-link-text">Corpus</span></a></li><li class="nav-item" role="presentation"><a id="tab-a-first-look-into-the-data" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#a-first-look-into-the-data" data-scrolling="false" href="#a-first-look-into-the-data" aria-controls="a-first-look-into-the-data" aria-selected="false"><span class="nav-link-text">A first look into the data</span></a></li><li class="nav-item" role="presentation"><a id="tab-chromagrams-dtw" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#chromagrams-dtw" data-scrolling="false" href="#chromagrams-dtw" aria-controls="chromagrams-dtw" aria-selected="false"><span class="nav-link-text">Chromagrams &amp; DTW</span></a></li><li class="nav-item" role="presentation"><a id="tab-cepstograms" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#cepstograms" data-scrolling="false" href="#cepstograms" aria-controls="cepstograms" aria-selected="false"><span class="nav-link-text">Cepstograms</span></a></li><li class="nav-item" role="presentation"><a id="tab-tempograms" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#tempograms" data-scrolling="false" href="#tempograms" aria-controls="tempograms" aria-selected="false"><span class="nav-link-text">Tempograms</span></a></li><li class="nav-item" role="presentation"><a id="tab-dendograms" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#dendograms" data-scrolling="false" href="#dendograms" aria-controls="dendograms" aria-selected="false"><span class="nav-link-text">Dendograms</span></a></li></ul></div></div>
 </nav>
 </header>
 <div class="page-layout-custom quarto-dashboard-content bslib-gap-spacing html-fill-container bslib-page-fill quarto-dashboard-pages">  
@@ -97,19 +97,12 @@ Corpus
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
-</div><div id="chromagrams" class="dashboard-page tab-pane grid-skip html-fill-item html-fill-container" data-orientation="columns" aria-labelledby="tab-chromagrams">
+</div><div id="a-first-look-into-the-data" class="dashboard-page tab-pane grid-skip html-fill-item html-fill-container" data-orientation="columns" aria-labelledby="tab-a-first-look-into-the-data">
 <div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr) minmax(3em, 1fr);
 grid-auto-rows: minmax(0, 1fr);">
 <div class="card html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-body html-fill-item html-fill-container">
-<div class="h4">
-Amy
-
-Winehouse
-
-chromagram
-</div>
-<img src="tears_dry_chromagram.png" class="img-fluid">
+<img src="week%201.png" class="img-fluid">
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
@@ -118,14 +111,81 @@ chromagram
     </span>
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="card html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-body html-fill-item html-fill-container">
+<p>Across most features, the distributions of the timeperiods overlaps a lot. This means there is no dramatic shift, but there are still some more subtle differences we can look at:</p>
 <div class="h4">
-Green
-
-Day
-
-chromagram
+Acousticness
 </div>
-<img src="american_idiot_chromagram.png" class="img-fluid">
+<p>In terms of acousticness, we can see that both periods are skewed towards low values, with crisis-songs slightly more so. This means popular music in both periods is predominantly non-acoustic/electronic. The slightly lower concentration of crisis-music slightly supports the idea of more synthetic, escapist production styles in this period, but we will need more evidence to support this claim</p>
+<div class="h4">
+Danceability
+</div>
+<p>We see that crisis-music peaks higher than pre-crisis music when it comes to danceability. Furthermore, the distribution of danceability is more spread out in the pre-crisis-period. This means that crisis songs are more consistently danceable, suggesting that music may have become more club-oriented and rhythm-focused during the financial crisis.</p>
+<div class="h4">
+Energy
+</div>
+<p>Energy levels are quite similar throughout both periods. The energy distribution shows a slight dip in the crisis period where pre-crisis songs peak, but they seem to average around the same point. In terms of energy, no strong conclusions can be held.</p>
+<div class="h4">
+Liveness
+</div>
+<p>Both periods seem to be concentrated around low levels of liveness. Crisis-music has a slightly higher peak at the very low levels. This might mean that most songs are studio-produced and not live recordings, and crisis songs may be even more polished/produced. While this is not extremely informative, it is consistent with …</p>
+<div class="h4">
+Loudness
+</div>
+<p>Crisis songs seem to be slightly louder, which fits with the idea of a more intense listening experience.</p>
+<div class="h4">
+Speechiness
+</div>
+<p>There is a peak at the lower end for both periods, but crisis-music seems to have a significantly higher density at the lowest end of the speechiness-spectrum. This suggests that most songs are musical rather than spoken/rap-heavy, in both time-periods.</p>
+<div class="h4">
+Tempo
+</div>
+<p>We can see that pre-crisis music peaks around 100BPM, while crisis-music peaks around 120-130BPM. This is also the BPM rate we’ve learned people are most comfortable with. On average, crisis songs are faster, providing direct evidence for more upbeat music during the crisis period.</p>
+<div class="h4">
+Valence
+</div>
+<p>Pre-crisis music has a slightly higher peak, around 0.75, while crisis-music seems to have two peaks, round 0.5 and 0.77. This siggests crisis-songs are not clearly happier, possibly slightly less positive or more mixed emotionally.</p>
+<p>While the distributions of Spotify features largely overlap across periods, several subtle shifts can be observed. Songs released during the financial crisis tend to be slightly more faster,louder, and more consistently danceable, while not showing a clear increase in valence. This suggests that rather than becoming more positive, crisis-era music may have become more intense and rhythm-driven, supporting the idea of “recession pop” as an escapist response to economic uncertainty.</p>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+</div><div id="chromagrams-dtw" class="dashboard-page tab-pane grid-skip html-fill-item html-fill-container" data-orientation="columns" aria-labelledby="tab-chromagrams-dtw">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr) minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="card html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<div class="h4">
+Chromagrams
+
+&amp;
+
+Dynamic
+
+Time
+
+Warping
+</div>
+<img src="greendaycomparison.png" class="img-fluid">
+<p>Amy Winehouse — Tears Dry Own Their Own <img src="tears_dry_chromagram.png" class="img-fluid"></p>
+<p>Greenday — American Idiot <img src="american_idiot_chromagram.png" class="img-fluid"></p>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="card html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<p>To analyze harmonic content over time, chromagrams were computed for each track. A chromagram represents the intensity of the twelve pitch classes (C, C♯, D, etc.) at each moment in time, independent of octave, making it possible to track how harmonic content evolves throughout a song. To compare different recordings, Dynamic Time Warping (DTW) was applied. DTW aligns two time series by stretching or compressing them in time to find an optimal match between their chroma features.</p>
+<p>As a case study, two versions of American Idiot by Green Day were compared: the original recording and the 20th anniversary rerecording (2024). The DTW alignment between these versions does not show a single strong diagonal line, which would indicate near-identical structure and timing. Instead, the alignment contains multiple shorter diagonal segments and symmetric patterns. This suggests that, while the songs share similar harmonic material, there are local timing differences and structural variations between the two versions.</p>
+<p>This pattern is consistent with what can be heard in the recordings. The rerecorded version differs slightly in timing, energy, and production, which likely affects how the chroma features align. Additionally, American Idiot is built around a highly repetitive harmonic structure, most notably the recurring power-chord riff. This repetition is reflected in the DTW visualization as repeated diagonal fragments rather than one continuous line, because similar musical sections are matched multiple times across the two recordings.</p>
+<p>Examining the chromagrams themselves further clarifies these differences. The chromagram of American Idiot shows strong, consistent activation in a limited set of pitch classes, indicating a relatively simple and repetitive harmonic structure. This aligns with the auditory impression of the song, which is driven by guitar power chords and has a direct, energetic sound.</p>
+<p>In contrast, Tears Dry On Their Own by Amy Winehouse exhibits a more varied chromagram, with activity spread across a wider range of pitch classes and more fluctuation over time. This reflects a richer harmonic palette and more complex arrangement, which is also clearly audible through its layered instrumentation and soul-influenced style.</p>
+<p>Overall, the chromagrams provide a clear visual representation of the musical differences between the tracks: American Idiot appears more harmonically constrained and repetitive, while Tears Dry On Their Own shows greater harmonic diversity and variation. These visual patterns closely correspond to the perceptual differences between the songs.</p>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>

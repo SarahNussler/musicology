@@ -25,19 +25,72 @@ Smart, N. (2025). Bret/BRAT. Critical Quarterly
 
 ## Row
 
-# Chromagrams
+# A first look into the data
 
 ::: card
-### Amy Winehouse chromagram
-
-![](tears_dry_chromagram.png)
+![](week%201.png)
 :::
 
 ::: card
-### Green Day chromagram
+Across most features, the distributions of the timeperiods overlaps a lot. This means there is no dramatic shift, but there are still some more subtle differences we can look at:
 
+### Acousticness 
+In terms of acousticness, we can see that both periods are skewed towards low values, with crisis-songs slightly more so. This means popular music in both periods is predominantly non-acoustic/electronic. The slightly lower concentration of crisis-music slightly supports the idea of more synthetic, escapist production styles in this period, but we will need more evidence to support this claim
+
+### Danceability 
+We see that crisis-music peaks higher than pre-crisis music when it comes to danceability. Furthermore, the distribution of danceability is more spread out in the pre-crisis-period. This means that crisis songs are more consistently danceable, suggesting that music may have become more club-oriented and rhythm-focused during the financial crisis.
+
+### Energy
+Energy levels are quite similar throughout both periods. The energy distribution shows a slight dip in the crisis period where pre-crisis songs peak, but they seem to average around the same point. In terms of energy, no strong conclusions can be held.
+
+### Liveness
+Both periods seem to be concentrated around low levels of liveness. Crisis-music has a slightly higher peak at the very low levels. This might mean that most songs are studio-produced and not live recordings, and crisis songs may be even more polished/produced. While this is not extremely informative, it is consistent with ...
+
+### Loudness
+Crisis songs seem to be slightly louder, which fits with the idea of a more intense listening experience.
+
+### Speechiness
+There is  a peak at the lower end for both periods, but crisis-music seems to have a significantly higher density at the lowest end of the speechiness-spectrum. This suggests that most songs are musical rather than spoken/rap-heavy, in both time-periods. 
+
+### Tempo
+We can see that pre-crisis music peaks around 100BPM, while  crisis-music peaks around 120-130BPM. This is also the BPM rate we've learned people are most comfortable with. On average, crisis songs are faster, providing direct evidence for more upbeat music during the crisis period.
+
+### Valence
+Pre-crisis music has a slightly higher peak, around 0.75, while crisis-music seems to have two peaks, round 0.5 and 0.77. This siggests crisis-songs are not clearly happier, possibly slightly less positive or more mixed emotionally.
+
+While the distributions of Spotify features largely overlap across periods, several subtle shifts can be observed. Songs released during the financial crisis tend to be slightly more faster,louder, and more consistently danceable, while not showing a clear increase in valence. This suggests that rather than becoming more positive, crisis-era music may have become more intense and rhythm-driven, supporting the idea of “recession pop” as an escapist response to economic uncertainty.
+:::
+
+## Row
+
+# Chromagrams & DTW
+
+::: card
+### Chromagrams & Dynamic Time Warping
+
+![](greendaycomparison.png)
+
+Amy Winehouse — Tears Dry Own Their Own
+![](tears_dry_chromagram.png)
+
+Greenday — American Idiot
 ![](american_idiot_chromagram.png)
 :::
+
+::: card
+To analyze harmonic content over time, chromagrams were computed for each track. A chromagram represents the intensity of the twelve pitch classes (C, C♯, D, etc.) at each moment in time, independent of octave, making it possible to track how harmonic content evolves throughout a song. To compare different recordings, Dynamic Time Warping (DTW) was applied. DTW aligns two time series by stretching or compressing them in time to find an optimal match between their chroma features.
+
+As a case study, two versions of American Idiot by Green Day were compared: the original recording and the 20th anniversary rerecording (2024). The DTW alignment between these versions does not show a single strong diagonal line, which would indicate near-identical structure and timing. Instead, the alignment contains multiple shorter diagonal segments and symmetric patterns. This suggests that, while the songs share similar harmonic material, there are local timing differences and structural variations between the two versions.
+
+This pattern is consistent with what can be heard in the recordings. The rerecorded version differs slightly in timing, energy, and production, which likely affects how the chroma features align. Additionally, American Idiot is built around a highly repetitive harmonic structure, most notably the recurring power-chord riff. This repetition is reflected in the DTW visualization as repeated diagonal fragments rather than one continuous line, because similar musical sections are matched multiple times across the two recordings.
+
+Examining the chromagrams themselves further clarifies these differences. The chromagram of American Idiot shows strong, consistent activation in a limited set of pitch classes, indicating a relatively simple and repetitive harmonic structure. This aligns with the auditory impression of the song, which is driven by guitar power chords and has a direct, energetic sound.
+
+In contrast, Tears Dry On Their Own by Amy Winehouse exhibits a more varied chromagram, with activity spread across a wider range of pitch classes and more fluctuation over time. This reflects a richer harmonic palette and more complex arrangement, which is also clearly audible through its layered instrumentation and soul-influenced style.
+
+Overall, the chromagrams provide a clear visual representation of the musical differences between the tracks: American Idiot appears more harmonically constrained and repetitive, while Tears Dry On Their Own shows greater harmonic diversity and variation. These visual patterns closely correspond to the perceptual differences between the songs.
+:::
+
 
 ## Row
 
@@ -92,8 +145,7 @@ These differences can also be heard when listening to the songs themselves. *Low
 # Dendograms
 
 ::: card
-![](pre-crisis dendogram.png)
-![](pre_crisis_heatmap.png)
+![](pre-crisis%20dendogram.png) ![](pre_crisis_heatmap.png)
 :::
 
 ::: card
@@ -101,6 +153,5 @@ These differences can also be heard when listening to the songs themselves. *Low
 :::
 
 ::: card
-![](crisis period dendogram.png)
-![](newheatmap_crisis.png)
+![](crisis%20period%20dendogram.png) ![](newheatmap_crisis.png)
 :::
