@@ -78,7 +78,7 @@ Greenday — American Idiot
 :::
 
 ::: card
-To analyze harmonic content over time, chromagrams were computed for each track. A chromagram represents the intensity of the twelve pitch classes (C, C♯, D, etc.) at each moment in time, independent of octave, making it possible to track how harmonic content evolves throughout a song. To compare different recordings, Dynamic Time Warping (DTW) was applied. DTW aligns two time series by stretching or compressing them in time to find an optimal match between their chroma features.
+To analyze harmonic content over time, chromagrams were computed for each track. A chromagram represents the intensity of the pitch classes at each moment in time, To compare different recordings, Dynamic Time Warping (DTW) was applied. DTW aligns two time series by "warping" them in time to find an optimal match between their chroma features.
 
 As a case study, two versions of American Idiot by Green Day were compared: the original recording and the 20th anniversary rerecording (2024). The DTW alignment between these versions does not show a single strong diagonal line, which would indicate near-identical structure and timing. Instead, the alignment contains multiple shorter diagonal segments and symmetric patterns. This suggests that, while the songs share similar harmonic material, there are local timing differences and structural variations between the two versions.
 
@@ -97,13 +97,19 @@ Overall, the chromagrams provide a clear visual representation of the musical di
 # Cepstograms
 
 ::: card
-### Amy Winehouse cepstogram
+### Amy Winehouse — Tears Dry Own Their Own
 
 ![](amy_timbre_chebyshev.png)
 :::
 
 ::: card
-### Green Day cepstogram
+The cepstrograms provide insight into the timbral structure of the tracks over time. In American Idiot, a clear dark band is visible in one of the lowest MFCC coefficients, indicating that the overall spectral balance remains highly stable throughout the track. This suggests a consistent timbre, which matches what is heard: the song is dominated by distorted guitar and drums, resulting in a uniform and steady sound. This consistency is also visible in the relatively stable horizontal patterns across other coefficients. You can clearly hear this in the song, which maintains a constant, driving character with little variation in sound color.
+
+In contrast, Tears Dry On Their Own shows more variation across MFCC coefficients over time, visible as stronger fluctuations in the cepstrogram. This indicates a more dynamic and complex timbre, likely due to its richer instrumentation and arrangement. This is also audible, as the track contains more variation in texture and sound throughout.
+:::
+
+::: card
+### Greenday — American Idiot
 
 ![](greenday_timbre_chebyshev.png)
 :::
@@ -119,7 +125,6 @@ Overall, the chromagrams provide a clear visual representation of the musical di
 :::
 
 ::: card
-### A comparison of tempograms before and during the economic crisis of 2008
 
 The novelty curves visualize how much the musical signal changes over time. In this case, only the first minute of the song is analyzed, so not too many details are lost but a significant portion of the song is still visualized. Peaks in the curve indicate moments where the audio features differ strongly from the preceding segment.
 
@@ -145,13 +150,33 @@ These differences can also be heard when listening to the songs themselves. *Low
 # Dendograms
 
 ::: card
-![](pre-crisis%20dendogram.png) ![](pre_crisis_heatmap.png)
+![](pre-crisis%20dendogram.png) 
 :::
 
 ::: card
-### Analysis
+The dendrograms reveal a clear difference in the clustering structure between the two periods. The pre-crisis dendrogram (2004–2007) shows a strong split into two large clusters that only merge at a high distance, indicating substantial differences between groups of songs. This suggests a higher degree of diversity in the musical features during this period, with some tracks being relatively dissimilar from the rest.
+
+In contrast, the crisis-period dendrogram (2008–2011) displays a more gradual and compact clustering structure, with many smaller clusters that merge at lower distances. This indicates that songs in this period are more similar to each other in terms of their extracted features.
+
+
 :::
 
 ::: card
-![](crisis%20period%20dendogram.png) ![](newheatmap_crisis.png)
+![](crisis%20period%20dendogram.png) 
+:::
+
+## Row 
+
+# Conclusion
+
+::: card
+This analysis set out to explore whether popular music reflects economic conditions, specifically whether the financial crisis of 2008 is associated with measurable changes in musical characteristics. While the overall distributions of Spotify features show substantial overlap between the two periods, several consistent patterns emerge across different representations.
+
+Crisis-period music appears to be slightly faster, louder, and more consistently danceable, without showing a clear increase in valence. This suggests that rather than becoming more positive, music became more rhythm-driven and energetic. The novelty curves and tempograms further support this, showing denser activity and strong, stable rhythmic structures that contribute to a more “club-oriented” sound.
+
+At a more structural level, the dendrograms and clustered heatmaps indicate a shift towards greater similarity between songs during the crisis period. Compared to the pre-crisis period, where clearer separations between groups of songs are visible, crisis-era music appears more homogeneous in its feature space. This is reinforced by the cepstrogram and chromagram analyses, which highlight more consistent timbral and harmonic patterns in certain tracks.
+
+These findings align with the idea of “recession pop” as described in the literature: rather than reflecting economic hardship through more melancholic or subdued music, popular songs during the crisis seem to emphasize energy, repetition, and escapism. This is also perceptually noticeable when listening to the tracks, where crisis-period music often shares a polished, upbeat, and rhythm-focused character.
+
+Overall, while the differences are subtle rather than dramatic, the combination of feature-based analysis and audio representations suggests a meaningful shift in popular music during the financial crisis towards greater uniformity and increased emphasis on danceability and intensity.
 :::
